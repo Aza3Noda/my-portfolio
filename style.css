@@ -25,7 +25,7 @@ body {
 }
 
 .topmenu:hover {
-  color: white;
+  color: beige;
   /* Add the styles here */
   font-weight: bolder;
   text-decoration: underline;
