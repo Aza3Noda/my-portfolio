@@ -83,7 +83,8 @@ function showPopup(bool) {
     }
 }
 
-// Initial Reveal Check
+// Initial Checks
 document.addEventListener("DOMContentLoaded", () => {
     reveal();
+    handleScrollTopButton();
 });
