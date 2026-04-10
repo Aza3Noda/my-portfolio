@@ -13,7 +13,20 @@ function reveal() {
     }
 }
 
-window.addEventListener("scroll", reveal);
+window.addEventListener("scroll", () => {
+    reveal();
+    handleScrollTopButton();
+});
+
+// Scroll to Top Button Visibility
+function handleScrollTopButton() {
+    const scrollTopBtn = document.querySelector(".iconbutton");
+    if (window.scrollY > 300) {
+        scrollTopBtn.classList.add("show");
+    } else {
+        scrollTopBtn.classList.remove("show");
+    }
+}
 
 // Add Recommendation Functionality
 function addRecommendation() {
