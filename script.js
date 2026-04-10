@@ -1,28 +1,76 @@
-function addRecommendation() {
-  // Get the message of the new recommendation
-  let recommendation = document.getElementById("new_recommendation");
-  // If the user has left a recommendation, display a pop-up
-  if (recommendation.value != null && recommendation.value.trim() != "") {
-    console.log("New recommendation added");
-    //Call showPopup here
-    showPopup(true);
+// Scroll Reveal Logic
+function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+        } else {
+            reveals[i].classList.remove("active");
+        }
+    }
+}
 
-    // Create a new 'recommendation' element and set it's value to the user's message
-    var element = document.createElement("div");
-    element.setAttribute("class","recommendation");
-    element.innerHTML = "\<span\>&#8220;\</span\>" + recommendation.value + "\<span\>&#8221;\</span\>";
-    // Add this element to the end of the list of recommendations
-    document.getElementById("all_recommendations").appendChild(element); 
-    
-    // Reset the value of the textarea
-    recommendation.value = "";
-  }
+window.addEventListener("scroll", reveal);
+
+// Add Recommendation Functionality
+function addRecommendation() {
+    const recommendationInput = document.getElementById("new_recommendation");
+    const nameInput = document.getElementById("user_name");
+    const recommendationsContainer = document.getElementById("all_recommendations");
+
+    if (recommendationInput.value.trim() !== "") {
+        // Create new recommendation card
+        const newCard = document.createElement("div");
+        newCard.className = "recommendation reveal fade-bottom active"; // Active so it shows up immediately
+        
+        const openQuote = document.createElement("span");
+        openQuote.innerHTML = "&#8220;";
+        
+        const text = document.createTextNode(recommendationInput.value);
+        
+        const closeQuote = document.createElement("span");
+        closeQuote.innerHTML = "&#8221;";
+        
+        newCard.appendChild(openQuote);
+        newCard.appendChild(text);
+        if (nameInput.value.trim() !== "") {
+            const namePara = document.createElement("p");
+            namePara.style.fontStyle = "normal";
+            namePara.style.fontWeight = "600";
+            namePara.style.marginTop = "1rem";
+            namePara.style.fontSize = "0.9rem";
+            namePara.style.color = "var(--primary)";
+            namePara.innerText = "- " + nameInput.value;
+            newCard.appendChild(namePara);
+        }
+        newCard.appendChild(closeQuote);
+        
+        recommendationsContainer.appendChild(newCard);
+        
+        // Show success popup
+        showPopup(true);
+        
+        // Clear inputs
+        recommendationInput.value = "";
+        nameInput.value = "";
+    }
 }
 
 function showPopup(bool) {
-  if (bool) {
-    document.getElementById('popup').style.visibility = 'visible'
-  } else {
-    document.getElementById('popup').style.visibility = 'hidden'
-  }
+    const popup = document.getElementById("popup");
+    if (bool) {
+        popup.style.visibility = "visible";
+        popup.style.opacity = "1";
+    } else {
+        popup.style.visibility = "hidden";
+        popup.style.opacity = "0";
+    }
 }
+
+// Initial Reveal Check
+document.addEventListener("DOMContentLoaded", () => {
+    reveal();
+});

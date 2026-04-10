@@ -1,194 +1,199 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Aza Noda - Portfolio</title>
-    <link rel="stylesheet" href="./style.css"/>
-    <script src="./script.js"></script>
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariel Noda | Full-Stack Developer</title>
+    <meta name="description" content="Portfolio of Ariel Noda, a full-stack developer specialized in modern, efficient web applications using Java, React, and Node.js.">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
     <!-- Navigation Bar -->
-    <nav>
-      <div id="home">
-        <div class="profile_name">
-          Ariel Noda
-          <div class="contact_info">
-            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          azanoda@proton.me
-        </div>
-        <div style="clear:both;"></div>
-        <div class="contact_info">
-          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          +4915567092005
+    <header>
+        <nav>
+            <div class="container">
+                <a href="#home" class="logo">Ariel Noda</a>
+                <div class="nav-links">
+                    <a href="#about-me">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#recommendations">Testimonials</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-        </div>
-        </div>
-        <div class="topdiv">
-          <a class="topmenu" href="#about-me">About Me</a>
-          <!-- Add the links for Skills, Projects and Recommendation here -->
-          <a class="topmenu" href="#skills">Skills</a>
-          <a class="topmenu" href="#projects">Projects</a>
-          <a class="topmenu" href="#recommendations">Recommendations</a>
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm Ariel <span class="wave">👋</span></h1>
+                    <p>I am a full-stack software developer focused on building modern, efficient web applications that help startups grow.</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn">View My Work</a>
+                    </div>
+                </div>
+                <div class="profile-img-container">
+                    <img src="html_finalprojimages/photo_2025-04-14_21-18-48.jpg" alt="Ariel Noda" class="profile_image">
+                </div>
+            </div>
+        </section>
 
-        </div>
-      </div>    
-    </nav>
+        <!-- About Me Section -->
+        <section id="about-me" class="about">
+            <div class="container reveal fade-bottom">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <p>
+                        I help startups and small businesses create fast, scalable, and user-friendly digital products. My work covers both front-end and back-end development, ensuring complete and reliable solutions.
+                    </p>
+                    <p>
+                        With expertise in Java, React, and Node.js, I focus on clean code, performance, and clear communication. Whether it's building responsive web apps or developing robust APIs, I'm committed to delivering quality results.
+                    </p>
+                </div>
+            </div>
+        </section>
+                  
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="container reveal fade-bottom">
+                <h2>Technical Skills</h2>
+                <div class="all_skills">
+                    <div class="skill">
+                        <img src="html_finalprojimages/html5.png" alt="HTML5">
+                        <h6>HTML5</h6>
+                        <p>Foundation & SEO</p>
+                    </div>  
 
-    <!-- About Me -->
-    <section id="about-me" class="container">
-      <div>
-        <img src="html_finalprojimages/photo_2025-04-14_21-18-48.jpg" class="profile_image"/>
-      </div>
+                    <div class="skill">
+                        <img src="html_finalprojimages/js.jpeg" alt="JavaScript">
+                        <h6>JavaScript</h6>
+                        <p>Modern ES6+</p>
+                    </div>  
 
-      <div>
-          <h1>
-            Hi, I'm Ariel! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
-          </h1>
-          <p>
-            I am a full-stack software developer focused on building modern, efficient web applications.
+                    <div class="skill">
+                        <img src="html_finalprojimages/java.png" alt="Java">
+                        <h6>Java</h6>
+                        <p>Backend Logic</p>
+                    </div>
 
-            I help startups and small businesses create fast, scalable, and user-friendly digital products. My work covers both front-end and back-end development, ensuring complete and reliable solutions.
+                    <div class="skill">
+                        <img src="html_finalprojimages/node.png" alt="Node.js">
+                        <h6>Node.js</h6>
+                        <p>Server-side JS</p>
+                    </div>
 
-            I have experience working with technologies such as Java, React, Node.js, JavaScript, and REST APIs. I focus on clean code, performance, and clear communication throughout the project.
-
-            I can help you with:
-
-                • Building responsive web applications
-                • Developing back-end APIs and integrations
-                • Fixing bugs and improving existing systems
-                • Creating MVPs for startups
-
-
-            I am reliable, detail-oriented, and committed to delivering quality results on time. 
-          </p>
-      </div>
-    </section>
+                    <div class="skill">
+                        <img src="html_finalprojimages/react.png" alt="React">
+                        <h6>React</h6>
+                        <p>Frontend Apps</p>
+                    </div>
+                </div>
+            </div>
+        </section>
               
-    <!-- Skills -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div style="clear:both;"></div>
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="container reveal fade-bottom">
+                <h2>Selected Projects</h2>
+                <div id="projects-container" class="projects-container">
+                    <article class="project-card">
+                        <img src="html_finalprojimages/taskflow.png" alt="TaskFlow Dashboard" class="project-img">
+                        <h3>TaskFlow</h3>
+                        <p>Project Management Web App</p>
+                        <ul>
+                            <li>Responsive task management platform for real-time tracking.</li>
+                            <li>Implemented drag-and-drop organization in React.</li>
+                        </ul>
+                    </article>
 
-      <div class="all_skills">
-        <div class="skill">
-          <img src="html_finalprojimages/html5.png"/>
-          <h6>HTML</h6>
-          <p>1 year experience</p>
-        </div>  
+                    <article class="project-card">
+                        <img src="html_finalprojimages/fittrack.png" alt="FitTrack Interface" class="project-img">
+                        <h3>FitTrack</h3>
+                        <p>Fitness & Nutrition Tracker</p>
+                        <ul>
+                            <li>Mobile-first app with interactive progress charts.</li>
+                            <li>Designed high-fidelity UI/UX flows in Figma.</li>
+                        </ul>
+                    </article>
 
-        <div class="skill">
-          <img src="html_finalprojimages/js.jpeg"/>
-          <h6>JavaScript</h6>
-          <p>1 year experience</p>
-        </div>  
+                    <article class="project-card">
+                        <img src="html_finalprojimages/localshop.png" alt="LocalShop E-commerce" class="project-img">
+                        <h3>LocalShop</h3>
+                        <p>E-commerce Solution</p>
+                        <ul>
+                            <li>Full-stack platform with secure payment integration.</li>
+                            <li>Modern interface with smooth micro-animations.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-        <div class="skill">
-            <img src="html_finalprojimages/java.png"/>
-            <h6>Java</h6>
-            <p>1 year experience</p>
+        <!-- Recommendations Section -->
+        <section id="recommendations" class="recommendations">
+            <div class="container reveal fade-bottom">
+                <h2>Testimonials</h2>
+                <div class="all_recommendations" id="all_recommendations">
+                    <div class="recommendation">
+                        <span>&#8220;</span>
+                        A highly skilled full-stack developer with a rare eye for UX. Transforms ideas into polished, user-friendly products.
+                        <span>&#8221;</span>
+                    </div>
+                    <div class="recommendation">
+                        <span>&#8220;</span>
+                        Combines technical expertise with strong design sensibilities. Always delivers on time and exceeds expectations.
+                        <span>&#8221;</span>
+                    </div>
+                    <div class="recommendation">
+                        <span>&#8220;</span>
+                        Reliable, creative, and detail-oriented. A valuable asset to any development team.
+                        <span>&#8221;</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container flex-center">
+                <form id="contact-form">
+                    <fieldset>
+                        <legend>Let's Work Together</legend>          
+                        <input type="text" placeholder="Your Name (Optional)" id="user_name">
+                        <textarea id="new_recommendation" rows="5" placeholder="Leave a recommendation or message..."></textarea>
+                        <button type="button" id="recommend_btn" onclick="addRecommendation()">Submit Message</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container flex-center" style="padding: 4rem 0; border-top: 1px solid rgba(18, 53, 36, 0.1);">
+            <p>&copy; 2026 Ariel Noda. All rights reserved. Built with passion & pthalo green.</p>
         </div>
+    </footer>
 
-        <!-- Add more skills here -->
-        <div class="skill">
-            <img src="html_finalprojimages/node.png"/>
-            <h6>Node</h6>
-            <p>1 year experience</p>
-        </div>
-
-        <div class="skill">
-            <img src="html_finalprojimages/react.png"/>
-            <h6>React</h6>
-            <p>3 months experience</p>
-        </div>
-
-
-      </div>
-    </section>
-          
-    <!-- Projects -->
-    <section class="projects" id="projects">
-      <h2>
-        Projects
-      </h2>
-      <div style="clear:both;"></div>
-
-        <div id="projects-container" class="projects-container">
-          <div class="project-card">
-            <h3>TaskFlow – Project Management Web App</h3>
-            <ul>
-              <li>Designed and developed a responsive task management platform enabling users to create, assign, and track tasks in real-time.</li>
-              <li>Implemented a drag-and-drop interface for task organization, improving usability by 25% (based on user testing feedback).</li>
-            </ul>
-          </div>
-          <hr>
-          <div class="project-card">
-            <h3>FitTrack – Fitness & Nutrition Tracker</h3>
-            <ul>
-              <li>Built a mobile-first fitness tracking app with interactive charts for workouts, calorie tracking, and progress visualization.</li>
-              <li>Designed the UI and UX flow in Figma, focusing on simplicity and accessibility for all age groups.</li>
-            </ul>
-          </div>
-          <hr>
-          <div class="project-card">
-            <h3>LocalShop – E-commerce Store for Small Businesses</h3>
-            <ul>
-              <li>Developed a full-stack e-commerce platform supporting product catalogs, shopping carts, and secure payments.</li>
-              <li>Designed a modern, conversion-focused interface with micro-animations for better user engagement.</li>
-            </ul>
-          </div>
-    </div>
-    </section>
-    <div style="clear:both;"></div>
-
-    <!-- Recommendations -->
-    <section id="recommendations">
-      <h2>Recommendations</h2>
-      <div style="clear:both;"></div>
-      <div class="all_recommendations" id="all_recommendations">
-        <div class="recommendation">
-          <span>&#8220;</span>
-          A highly skilled full-stack developer with a rare eye for UX. Transforms ideas into polished, user-friendly products while maintaining clean, maintainable code and smooth collaboration across teams.
-          <span>&#8221;</span>
-        </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Combines technical expertise with strong design sensibilities. Always delivers on time, exceeds expectations, and creates solutions that are both elegant in design and robust in functionality."
-          <span>&#8221;</span>
-        </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Reliable, creative, and detail-oriented. Brings projects to life with a perfect balance of technical precision and user-centered design, making them a valuable asset to any development team. 
-          <span>&#8221;</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Recommendation Form -->
-    <section id="contact">
-      <div class="flex_center">
-        <fieldset>
-          <legend class="introduction">Leave a Recommendation</legend>          
-          <input type="text" placeholder="Name (Optional)"> <br/>
-          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
-          <div class="flex_center">
-            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
-          </div>
-        </fieldset>
-      </div>
-    </section>
-
+    <!-- Scroll to Top -->
     <div class="iconbutton">
-      <a href="#home">
-        <!--Add the code here for the logo to appear and the icon to be actionable-->
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-      </a>
+        <a href="#home">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="32px">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+        </a>
     </div>
 
-    <div class="popup" id="popup" class="flex_center">
-      <img src="html_finalprojimages/checkmark--outline.svg"/>
-      <h3><!-- Add appropriate text here--></h3>
-      <button onclick="showPopup(false)">Ok</button>
+    <!-- Popup Notification -->
+    <div class="popup" id="popup">
+        <img src="html_finalprojimages/checkmark--outline.svg" alt="Success" width="60">
+        <h3>Thank you!</h3>
+        <p>Your recommendation has been submitted successfully.</p>
+        <button onclick="showPopup(false)">Excellent</button>
     </div>
-  </body>
+</body>
 </html>
