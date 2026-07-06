@@ -19,7 +19,6 @@
                         <a href="#about-me" data-i18n="nav.about">About</a>
                         <a href="#skills" data-i18n="nav.skills">Skills</a>
                         <a href="#projects" data-i18n="nav.projects">Projects</a>
-                        <a href="#recommendations" data-i18n="nav.testimonials">Testimonials</a>
                         <a href="#contact" data-i18n="nav.contact">Contact</a>
                     </div>
                     <div class="lang-switcher" role="group" aria-label="Language">
@@ -139,30 +138,6 @@
             </div>
         </section>
 
-        <!-- Recommendations Section -->
-        <section id="recommendations" class="recommendations">
-            <div class="container reveal fade-bottom">
-                <h2 data-i18n="testimonials.title">Testimonials</h2>
-                <div class="all_recommendations" id="all_recommendations">
-                    <div class="recommendation">
-                        <span>&#8220;</span>
-                        <span data-i18n="testimonials.1">A highly skilled full-stack developer with a rare eye for UX. Transforms ideas into polished, user-friendly products.</span>
-                        <span>&#8221;</span>
-                    </div>
-                    <div class="recommendation">
-                        <span>&#8220;</span>
-                        <span data-i18n="testimonials.2">Combines technical expertise with strong design sensibilities. Always delivers on time and exceeds expectations.</span>
-                        <span>&#8221;</span>
-                    </div>
-                    <div class="recommendation">
-                        <span>&#8220;</span>
-                        <span data-i18n="testimonials.3">Reliable, creative, and detail-oriented. A valuable asset to any development team.</span>
-                        <span>&#8221;</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Contact Section -->
         <section id="contact">
             <div class="container flex-center">
@@ -170,8 +145,8 @@
                     <fieldset>
                         <legend data-i18n="contact.title">Let's Work Together</legend>          
                         <input type="text" data-i18n-placeholder="contact.namePlaceholder" placeholder="Your Name (Optional)" id="user_name">
-                        <textarea id="new_recommendation" rows="5" data-i18n-placeholder="contact.messagePlaceholder" placeholder="Leave a recommendation or message..."></textarea>
-                        <button type="button" id="recommend_btn" onclick="addRecommendation()" data-i18n="contact.submit">Submit Message</button>
+                        <textarea id="new_recommendation" rows="5" data-i18n-placeholder="contact.messagePlaceholder" placeholder="Leave a message..."></textarea>
+                        <button type="button" id="recommend_btn" onclick="submitMessage()" data-i18n="contact.submit">Submit Message</button>
                     </fieldset>
                 </form>
             </div>
@@ -198,7 +173,7 @@
     <div class="popup" id="popup">
         <img src="html_finalprojimages/checkmark--outline.svg" alt="Success" width="60">
         <h3 data-i18n="popup.title">Thank you!</h3>
-        <p data-i18n="popup.message">Your recommendation has been submitted successfully.</p>
+        <p data-i18n="popup.message">Your message has been submitted successfully.</p>
         <button onclick="showPopup(false)" data-i18n="popup.button">Excellent</button>
     </div>
 </body>

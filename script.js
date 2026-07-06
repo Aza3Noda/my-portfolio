@@ -9,7 +9,6 @@ const translations = {
             about: "About",
             skills: "Skills",
             projects: "Projects",
-            testimonials: "Testimonials",
             contact: "Contact"
         },
         hero: {
@@ -48,16 +47,10 @@ const translations = {
                 li2: "Modern interface with smooth micro-animations."
             }
         },
-        testimonials: {
-            title: "Testimonials",
-            "1": "A highly skilled full-stack developer with a rare eye for UX. Transforms ideas into polished, user-friendly products.",
-            "2": "Combines technical expertise with strong design sensibilities. Always delivers on time and exceeds expectations.",
-            "3": "Reliable, creative, and detail-oriented. A valuable asset to any development team."
-        },
         contact: {
             title: "Let's Work Together",
             namePlaceholder: "Your Name (Optional)",
-            messagePlaceholder: "Leave a recommendation or message...",
+            messagePlaceholder: "Leave a message...",
             submit: "Submit Message"
         },
         footer: {
@@ -65,7 +58,7 @@ const translations = {
         },
         popup: {
             title: "Thank you!",
-            message: "Your recommendation has been submitted successfully.",
+            message: "Your message has been submitted successfully.",
             button: "Excellent"
         }
     },
@@ -78,7 +71,6 @@ const translations = {
             about: "Über mich",
             skills: "Fähigkeiten",
             projects: "Projekte",
-            testimonials: "Referenzen",
             contact: "Kontakt"
         },
         hero: {
@@ -117,16 +109,10 @@ const translations = {
                 li2: "Moderne Oberfläche mit flüssigen Micro-Animationen."
             }
         },
-        testimonials: {
-            title: "Referenzen",
-            "1": "Ein hochqualifizierter Full-Stack-Entwickler mit einem seltenen Gespür für UX. Verwandelt Ideen in ausgereifte, benutzerfreundliche Produkte.",
-            "2": "Verbindet technisches Know-how mit starkem Designverständnis. Liefert stets pünktlich und übertrifft Erwartungen.",
-            "3": "Zuverlässig, kreativ und detailorientiert. Eine wertvolle Bereicherung für jedes Entwicklungsteam."
-        },
         contact: {
             title: "Lass uns zusammenarbeiten",
             namePlaceholder: "Dein Name (optional)",
-            messagePlaceholder: "Hinterlasse eine Empfehlung oder Nachricht...",
+            messagePlaceholder: "Hinterlasse eine Nachricht...",
             submit: "Nachricht senden"
         },
         footer: {
@@ -134,7 +120,7 @@ const translations = {
         },
         popup: {
             title: "Vielen Dank!",
-            message: "Deine Empfehlung wurde erfolgreich übermittelt.",
+            message: "Deine Nachricht wurde erfolgreich übermittelt.",
             button: "Ausgezeichnet"
         }
     }
@@ -224,46 +210,14 @@ function handleScrollTopButton() {
     }
 }
 
-// Add Recommendation Functionality
-function addRecommendation() {
-    const recommendationInput = document.getElementById("new_recommendation");
+// Contact Form
+function submitMessage() {
+    const messageInput = document.getElementById("new_recommendation");
     const nameInput = document.getElementById("user_name");
-    const recommendationsContainer = document.getElementById("all_recommendations");
 
-    if (recommendationInput.value.trim() !== "") {
-        // Create new recommendation card
-        const newCard = document.createElement("div");
-        newCard.className = "recommendation reveal fade-bottom active"; // Active so it shows up immediately
-        
-        const openQuote = document.createElement("span");
-        openQuote.innerHTML = "&#8220;";
-        
-        const text = document.createTextNode(recommendationInput.value);
-        
-        const closeQuote = document.createElement("span");
-        closeQuote.innerHTML = "&#8221;";
-        
-        newCard.appendChild(openQuote);
-        newCard.appendChild(text);
-        if (nameInput.value.trim() !== "") {
-            const namePara = document.createElement("p");
-            namePara.style.fontStyle = "normal";
-            namePara.style.fontWeight = "600";
-            namePara.style.marginTop = "1rem";
-            namePara.style.fontSize = "0.9rem";
-            namePara.style.color = "var(--primary)";
-            namePara.innerText = "- " + nameInput.value;
-            newCard.appendChild(namePara);
-        }
-        newCard.appendChild(closeQuote);
-        
-        recommendationsContainer.appendChild(newCard);
-        
-        // Show success popup
+    if (messageInput.value.trim() !== "") {
         showPopup(true);
-        
-        // Clear inputs
-        recommendationInput.value = "";
+        messageInput.value = "";
         nameInput.value = "";
     }
 }

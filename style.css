@@ -337,53 +337,6 @@ nav .container {
     color: var(--accent);
 }
 
-/* Recommendations */
-.recommendations {
-    background: var(--bg-main);
-}
-
-.recommendations h2 {
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 4rem;
-}
-
-.all_recommendations {
-    display: flex;
-    gap: 2rem;
-    overflow-x: auto;
-    padding: 2rem 0;
-    scrollbar-width: none;
-}
-
-.recommendation {
-    min-width: 400px;
-    background: var(--bg-card);
-    padding: 3rem;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow-soft);
-    position: relative;
-    font-style: italic;
-    font-size: 1.1rem;
-}
-
-.recommendation span {
-    color: var(--primary);
-    font-size: 3rem;
-    position: absolute;
-    opacity: 0.1;
-}
-
-.recommendation span:first-child {
-    top: 1rem;
-    left: 1rem;
-}
-
-.recommendation span:last-child {
-    bottom: 1rem;
-    right: 1rem;
-}
-
 /* Form */
 #contact {
     padding-bottom: 10rem;
