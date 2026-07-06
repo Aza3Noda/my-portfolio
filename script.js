@@ -82,7 +82,7 @@ const translations = {
             contact: "Kontakt"
         },
         hero: {
-            title: `Hallo, ich bin Ariel <span class="wave">👋</span>`,
+            title: `Hola, ich bin Ariel <span class="wave">👋</span>`,
             description: "Ich bin Full-Stack-Softwareentwickler und entwickle moderne, effiziente Webanwendungen, die Start-ups beim Wachstum unterstützen.",
             cta: "Meine Projekte ansehen"
         },
