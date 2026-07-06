@@ -112,6 +112,50 @@ nav .container {
     width: 100%;
 }
 
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.lang-switcher {
+    display: flex;
+    gap: 0.25rem;
+    padding: 0.25rem;
+    background: rgba(18, 53, 36, 0.06);
+    border-radius: 10px;
+    border: 1px solid rgba(18, 53, 36, 0.1);
+}
+
+.lang-btn {
+    width: auto;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    background: transparent;
+    color: var(--text-muted);
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+.lang-btn:hover {
+    transform: none;
+    box-shadow: none;
+    color: var(--primary);
+    background: rgba(18, 53, 36, 0.06);
+}
+
+.lang-btn.active {
+    background: var(--primary);
+    color: var(--text-light);
+}
+
+.lang-btn.active:hover {
+    background: #1a4d34;
+    color: var(--text-light);
+}
+
 /* Hero Section */
 .hero {
     min-height: 100vh;
@@ -529,5 +573,9 @@ button:hover {
     
     .nav-links {
         display: none;
+    }
+
+    .nav-right {
+        gap: 0;
     }
 }

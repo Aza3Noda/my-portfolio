@@ -14,12 +14,18 @@
         <nav>
             <div class="container">
                 <a href="#home" class="logo">Ariel Noda</a>
-                <div class="nav-links">
-                    <a href="#about-me">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#recommendations">Testimonials</a>
-                    <a href="#contact">Contact</a>
+                <div class="nav-right">
+                    <div class="nav-links">
+                        <a href="#about-me" data-i18n="nav.about">About</a>
+                        <a href="#skills" data-i18n="nav.skills">Skills</a>
+                        <a href="#projects" data-i18n="nav.projects">Projects</a>
+                        <a href="#recommendations" data-i18n="nav.testimonials">Testimonials</a>
+                        <a href="#contact" data-i18n="nav.contact">Contact</a>
+                    </div>
+                    <div class="lang-switcher" role="group" aria-label="Language">
+                        <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+                        <button type="button" class="lang-btn" data-lang="de" aria-pressed="false">DE</button>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -30,10 +36,10 @@
         <section id="home" class="hero">
             <div class="container hero-content">
                 <div class="hero-text">
-                    <h1>Hola, I'm Ariel <span class="wave">👋</span></h1>
-                    <p>I am a full-stack software developer focused on building modern, efficient web applications that help startups grow.</p>
+                    <h1 data-i18n="hero.title" data-i18n-html>Hola, I'm Ariel <span class="wave">👋</span></h1>
+                    <p data-i18n="hero.description">I am a full-stack software developer focused on building modern, efficient web applications that help startups grow.</p>
                     <div class="hero-cta">
-                        <a href="#projects" class="btn">View My Work</a>
+                        <a href="#projects" class="btn" data-i18n="hero.cta">View My Work</a>
                     </div>
                 </div>
                 <div class="profile-img-container">
@@ -45,12 +51,12 @@
         <!-- About Me Section -->
         <section id="about-me" class="about">
             <div class="container reveal fade-bottom">
-                <h2>About Me</h2>
+                <h2 data-i18n="about.title">About Me</h2>
                 <div class="about-content">
-                    <p>
+                    <p data-i18n="about.p1">
                         I help startups and small businesses create fast, scalable, and user-friendly digital products. My work covers both front-end and back-end development, ensuring complete and reliable solutions.
                     </p>
-                    <p>
+                    <p data-i18n="about.p2">
                         With expertise in Java, React, and Node.js, I focus on clean code, performance, and clear communication. Whether it's building responsive web apps or developing robust APIs, I'm committed to delivering quality results.
                     </p>
                 </div>
@@ -60,36 +66,36 @@
         <!-- Skills Section -->
         <section id="skills">
             <div class="container reveal fade-bottom">
-                <h2>Technical Skills</h2>
+                <h2 data-i18n="skills.title">Technical Skills</h2>
                 <div class="all_skills">
                     <div class="skill">
                         <img src="html_finalprojimages/html5.png" alt="HTML5">
                         <h6>HTML5</h6>
-                        <p>Foundation & SEO</p>
+                        <p data-i18n="skills.html">Foundation & SEO</p>
                     </div>  
 
                     <div class="skill">
                         <img src="html_finalprojimages/js.jpeg" alt="JavaScript">
                         <h6>JavaScript</h6>
-                        <p>Modern ES6+</p>
+                        <p data-i18n="skills.js">Modern ES6+</p>
                     </div>  
 
                     <div class="skill">
                         <img src="html_finalprojimages/java.png" alt="Java">
                         <h6>Java</h6>
-                        <p>Backend Logic</p>
+                        <p data-i18n="skills.java">Backend Logic</p>
                     </div>
 
                     <div class="skill">
                         <img src="html_finalprojimages/node.png" alt="Node.js">
                         <h6>Node.js</h6>
-                        <p>Server-side JS</p>
+                        <p data-i18n="skills.node">Server-side JS</p>
                     </div>
 
                     <div class="skill">
                         <img src="html_finalprojimages/react.png" alt="React">
                         <h6>React</h6>
-                        <p>Frontend Apps</p>
+                        <p data-i18n="skills.react">Frontend Apps</p>
                     </div>
                 </div>
             </div>
@@ -98,35 +104,35 @@
         <!-- Projects Section -->
         <section class="projects" id="projects">
             <div class="container reveal fade-bottom">
-                <h2>Selected Projects</h2>
+                <h2 data-i18n="projects.title">Selected Projects</h2>
                 <div id="projects-container" class="projects-container">
                     <article class="project-card">
                         <img src="html_finalprojimages/taskflow.png" alt="TaskFlow Dashboard" class="project-img">
                         <h3>TaskFlow</h3>
-                        <p>Project Management Web App</p>
+                        <p data-i18n="projects.taskflow.subtitle">Project Management Web App</p>
                         <ul>
-                            <li>Responsive task management platform for real-time tracking.</li>
-                            <li>Implemented drag-and-drop organization in React.</li>
+                            <li data-i18n="projects.taskflow.li1">Responsive task management platform for real-time tracking.</li>
+                            <li data-i18n="projects.taskflow.li2">Implemented drag-and-drop organization in React.</li>
                         </ul>
                     </article>
 
                     <article class="project-card">
                         <img src="html_finalprojimages/fittrack.png" alt="FitTrack Interface" class="project-img">
                         <h3>FitTrack</h3>
-                        <p>Fitness & Nutrition Tracker</p>
+                        <p data-i18n="projects.fittrack.subtitle">Fitness & Nutrition Tracker</p>
                         <ul>
-                            <li>Mobile-first app with interactive progress charts.</li>
-                            <li>Designed high-fidelity UI/UX flows in Figma.</li>
+                            <li data-i18n="projects.fittrack.li1">Mobile-first app with interactive progress charts.</li>
+                            <li data-i18n="projects.fittrack.li2">Designed high-fidelity UI/UX flows in Figma.</li>
                         </ul>
                     </article>
 
                     <article class="project-card">
                         <img src="html_finalprojimages/localshop.png" alt="LocalShop E-commerce" class="project-img">
                         <h3>LocalShop</h3>
-                        <p>E-commerce Solution</p>
+                        <p data-i18n="projects.localshop.subtitle">E-commerce Solution</p>
                         <ul>
-                            <li>Full-stack platform with secure payment integration.</li>
-                            <li>Modern interface with smooth micro-animations.</li>
+                            <li data-i18n="projects.localshop.li1">Full-stack platform with secure payment integration.</li>
+                            <li data-i18n="projects.localshop.li2">Modern interface with smooth micro-animations.</li>
                         </ul>
                     </article>
                 </div>
@@ -136,21 +142,21 @@
         <!-- Recommendations Section -->
         <section id="recommendations" class="recommendations">
             <div class="container reveal fade-bottom">
-                <h2>Testimonials</h2>
+                <h2 data-i18n="testimonials.title">Testimonials</h2>
                 <div class="all_recommendations" id="all_recommendations">
                     <div class="recommendation">
                         <span>&#8220;</span>
-                        A highly skilled full-stack developer with a rare eye for UX. Transforms ideas into polished, user-friendly products.
+                        <span data-i18n="testimonials.1">A highly skilled full-stack developer with a rare eye for UX. Transforms ideas into polished, user-friendly products.</span>
                         <span>&#8221;</span>
                     </div>
                     <div class="recommendation">
                         <span>&#8220;</span>
-                        Combines technical expertise with strong design sensibilities. Always delivers on time and exceeds expectations.
+                        <span data-i18n="testimonials.2">Combines technical expertise with strong design sensibilities. Always delivers on time and exceeds expectations.</span>
                         <span>&#8221;</span>
                     </div>
                     <div class="recommendation">
                         <span>&#8220;</span>
-                        Reliable, creative, and detail-oriented. A valuable asset to any development team.
+                        <span data-i18n="testimonials.3">Reliable, creative, and detail-oriented. A valuable asset to any development team.</span>
                         <span>&#8221;</span>
                     </div>
                 </div>
@@ -162,10 +168,10 @@
             <div class="container flex-center">
                 <form id="contact-form">
                     <fieldset>
-                        <legend>Let's Work Together</legend>          
-                        <input type="text" placeholder="Your Name (Optional)" id="user_name">
-                        <textarea id="new_recommendation" rows="5" placeholder="Leave a recommendation or message..."></textarea>
-                        <button type="button" id="recommend_btn" onclick="addRecommendation()">Submit Message</button>
+                        <legend data-i18n="contact.title">Let's Work Together</legend>          
+                        <input type="text" data-i18n-placeholder="contact.namePlaceholder" placeholder="Your Name (Optional)" id="user_name">
+                        <textarea id="new_recommendation" rows="5" data-i18n-placeholder="contact.messagePlaceholder" placeholder="Leave a recommendation or message..."></textarea>
+                        <button type="button" id="recommend_btn" onclick="addRecommendation()" data-i18n="contact.submit">Submit Message</button>
                     </fieldset>
                 </form>
             </div>
@@ -175,7 +181,7 @@
     <!-- Footer -->
     <footer>
         <div class="container flex-center" style="padding: 4rem 0; border-top: 1px solid rgba(18, 53, 36, 0.1);">
-            <p>&copy; 2026 Ariel Noda. All rights reserved. Built with passion & phthalo green.</p>
+            <p data-i18n="footer.text">&copy; 2026 Ariel Noda. All rights reserved. Built with passion & phthalo green.</p>
         </div>
     </footer>
 
@@ -191,9 +197,9 @@
     <!-- Popup Notification -->
     <div class="popup" id="popup">
         <img src="html_finalprojimages/checkmark--outline.svg" alt="Success" width="60">
-        <h3>Thank you!</h3>
-        <p>Your recommendation has been submitted successfully.</p>
-        <button onclick="showPopup(false)">Excellent</button>
+        <h3 data-i18n="popup.title">Thank you!</h3>
+        <p data-i18n="popup.message">Your recommendation has been submitted successfully.</p>
+        <button onclick="showPopup(false)" data-i18n="popup.button">Excellent</button>
     </div>
 </body>
 </html>
