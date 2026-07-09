@@ -41,10 +41,10 @@ const translations = {
                 li1: "Mobile-first app with interactive progress charts.",
                 li2: "Designed high-fidelity UI/UX flows in Figma."
             },
-            localshop: {
-                subtitle: "E-commerce Solution",
-                li1: "Full-stack platform with secure payment integration.",
-                li2: "Modern interface with smooth micro-animations."
+            iris_marketplace: {
+                subtitle: "Iris Marketplace",
+                li1: "Mobile application for existing marketplace.",
+                li2: "UI design and integration with APIs."
             }
         },
         contact: {
@@ -103,10 +103,10 @@ const translations = {
                 li1: "Mobile-first App mit interaktiven Fortschrittsdiagrammen.",
                 li2: "High-Fidelity UI/UX-Flows in Figma entworfen."
             },
-            localshop: {
-                subtitle: "E-Commerce-Lösung",
-                li1: "Full-Stack-Plattform mit sicherer Zahlungsintegration.",
-                li2: "Moderne Oberfläche mit flüssigen Micro-Animationen."
+            iris_marketplace: {
+                subtitle: "Iris Marketplace",
+                li1: "Mobile App für einen bestehenden Marktplatz.",
+                li2: "UI-Design und Integration von APIs."
             }
         },
         contact: {
