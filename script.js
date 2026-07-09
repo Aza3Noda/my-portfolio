@@ -8,8 +8,7 @@ const translations = {
         nav: {
             about: "About",
             skills: "Skills",
-            projects: "Projects",
-            contact: "Contact"
+            projects: "Projects"
         },
         hero: {
             title: `Hola, I'm Ariel <span class="wave">👋</span>`,
@@ -27,7 +26,9 @@ const translations = {
             js: "Modern ES6+",
             java: "Backend Logic",
             node: "Server-side JS",
-            react: "Frontend Apps"
+            react: "Frontend Apps",
+            mysql: "Database",
+            ai: "Faster Development and Code Review"
         },
         projects: {
             title: "Selected Projects",
@@ -47,19 +48,8 @@ const translations = {
                 li2: "UI design and integration with APIs."
             }
         },
-        contact: {
-            title: "Let's Work Together",
-            namePlaceholder: "Your Name (Optional)",
-            messagePlaceholder: "Leave a message...",
-            submit: "Submit Message"
-        },
         footer: {
             text: "© 2026 Ariel Noda. All rights reserved. Built with passion & phthalo green."
-        },
-        popup: {
-            title: "Thank you!",
-            message: "Your message has been submitted successfully.",
-            button: "Excellent"
         }
     },
     de: {
@@ -70,8 +60,7 @@ const translations = {
         nav: {
             about: "Über mich",
             skills: "Fähigkeiten",
-            projects: "Projekte",
-            contact: "Kontakt"
+            projects: "Projekte"
         },
         hero: {
             title: `Hola, ich bin Ariel <span class="wave">👋</span>`,
@@ -89,7 +78,9 @@ const translations = {
             js: "Modernes ES6+",
             java: "Backend-Logik",
             node: "Serverseitiges JS",
-            react: "Frontend-Anwendungen"
+            react: "Frontend-Anwendungen",
+            mysql: "Datenbank",
+            ai: "Schnellere Entwicklung & Code-Überprüfung"
         },
         projects: {
             title: "Ausgewählte Projekte",
@@ -109,19 +100,8 @@ const translations = {
                 li2: "UI-Design und Integration von APIs."
             }
         },
-        contact: {
-            title: "Lass uns zusammenarbeiten",
-            namePlaceholder: "Dein Name (optional)",
-            messagePlaceholder: "Hinterlasse eine Nachricht...",
-            submit: "Nachricht senden"
-        },
         footer: {
             text: "© 2026 Ariel Noda. Alle Rechte vorbehalten. Mit Leidenschaft & Phthalogrün gebaut."
-        },
-        popup: {
-            title: "Vielen Dank!",
-            message: "Deine Nachricht wurde erfolgreich übermittelt.",
-            button: "Ausgezeichnet"
         }
     }
 };
@@ -207,29 +187,6 @@ function handleScrollTopButton() {
         scrollTopBtn.classList.add("show");
     } else {
         scrollTopBtn.classList.remove("show");
-    }
-}
-
-// Contact Form
-function submitMessage() {
-    const messageInput = document.getElementById("new_recommendation");
-    const nameInput = document.getElementById("user_name");
-
-    if (messageInput.value.trim() !== "") {
-        showPopup(true);
-        messageInput.value = "";
-        nameInput.value = "";
-    }
-}
-
-function showPopup(bool) {
-    const popup = document.getElementById("popup");
-    if (bool) {
-        popup.style.visibility = "visible";
-        popup.style.opacity = "1";
-    } else {
-        popup.style.visibility = "hidden";
-        popup.style.opacity = "0";
     }
 }
 

@@ -19,7 +19,6 @@
                         <a href="#about-me" data-i18n="nav.about">About</a>
                         <a href="#skills" data-i18n="nav.skills">Skills</a>
                         <a href="#projects" data-i18n="nav.projects">Projects</a>
-                        <a href="#contact" data-i18n="nav.contact">Contact</a>
                     </div>
                     <div class="lang-switcher" role="group" aria-label="Language">
                         <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
@@ -96,6 +95,18 @@
                         <h6>React</h6>
                         <p data-i18n="skills.react">Frontend Apps</p>
                     </div>
+
+                    <div class="skill">
+                        <img src="html_finalprojimages/mysql.png" alt="MySQL">
+                        <h6>MySQL</h6>
+                        <p data-i18n="skills.mysql">Database</p>
+                    </div>
+
+                    <div class="skill">
+                        <img src="html_finalprojimages/ai.png" alt="AI">
+                        <h6>AI</h6>
+                        <p data-i18n="skills.ai">Faster Development and Code Review</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -137,20 +148,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <div class="container flex-center">
-                <form id="contact-form">
-                    <fieldset>
-                        <legend data-i18n="contact.title">Let's Work Together</legend>          
-                        <input type="text" data-i18n-placeholder="contact.namePlaceholder" placeholder="Your Name (Optional)" id="user_name">
-                        <textarea id="new_recommendation" rows="5" data-i18n-placeholder="contact.messagePlaceholder" placeholder="Leave a message..."></textarea>
-                        <button type="button" id="recommend_btn" onclick="submitMessage()" data-i18n="contact.submit">Submit Message</button>
-                    </fieldset>
-                </form>
-            </div>
-        </section>
     </main>
 
     <!-- Footer -->
@@ -167,14 +164,6 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
         </a>
-    </div>
-
-    <!-- Popup Notification -->
-    <div class="popup" id="popup">
-        <img src="html_finalprojimages/checkmark--outline.svg" alt="Success" width="60">
-        <h3 data-i18n="popup.title">Thank you!</h3>
-        <p data-i18n="popup.message">Your message has been submitted successfully.</p>
-        <button onclick="showPopup(false)" data-i18n="popup.button">Excellent</button>
     </div>
 </body>
 </html>
